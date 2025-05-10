@@ -1,13 +1,18 @@
 import{BrowserRouter,Routes,Route}from "react-router-dom"
+import Home from "./Home"
+import Contact from "./Contact"
 
 function App() {
-  const name="anish"
+  
 
   return (
   <BrowserRouter>
   <Routes>
-    <Route path="/" element={ <h2>This is home page</h2> } />
-    <Route path="/about" element={ <h2>This is about page</h2> } />
+    <Route path="/" element={  <h1>hello k xa khbr</h1>}/>
+    <Route path="/home" element={ <Home/>} />
+    <Route path="/contact" element={<Contact/>}/>
+    
+  
   </Routes>
   </BrowserRouter>
   )
